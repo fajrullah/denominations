@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --mode production",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress",
   },
   "keywords": [],
   "author": "",
