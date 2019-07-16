@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "start": "node src/index.js",
-      "build": "webpack"
+    "start": "webpack-dev-server --open --hot --mode development",
+    "build": "webpack --mode production"
   },
   "heroku-run-build-script": true,
   "keywords": [],
@@ -34,6 +34,5 @@
     "babel-jest": "^24.8.0",
     "babel-preset-react": "^6.24.1",
     "regenerator-runtime": "^0.13.2"
-  },
-  "heroku-run-build-script": true
+  }
 }
