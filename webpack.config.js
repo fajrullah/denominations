@@ -1,4 +1,4 @@
-const env = process.env.NODE_ENV
+const port = (process.env.PORT || 8010)
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   module: {
