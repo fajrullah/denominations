@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --hot --mode development",
-    "build": "webpack --mode production",
-    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress",
+    "start": "node src/index.js",
+    "build": "webpack" // This will now run on Heroku by default
   },
   "keywords": [],
   "author": "",
