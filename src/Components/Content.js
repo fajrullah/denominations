@@ -9,13 +9,11 @@ class Content extends Component {
     denomination : '',
   }
   onChange = (e) => {
-    const valid = ['18.215','Rp17500','Rp17.500,00','Rp 120.325','005.000','001000']
-    const invalidsuccess = ['3000 Rp','Rp','2 500']
     const val = e.target.value
     let valueInput =  0
     const isValid = validationInput(val)
     if(isValid){
-          valueInput = formatInputValue(val) / 100000
+          valueInput = formatInputValue(val) / defaultFraction[0]
           const seratusRibu = denominationFraction(Math.floor(valueInput),defaultFraction[0])
           let comas = valueInput % 1
           let restValue = 0, roundValue = 0 , toDecimal = 0, toString = '' , recentFraction = 0
